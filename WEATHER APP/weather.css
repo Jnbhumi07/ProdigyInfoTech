@@ -1,0 +1,90 @@
+/* ---------- Body Styling ---------- */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #4978a0, #00f2fe);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* ---------- Main Container ---------- */
+.container {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 30px 25px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+  color: white;
+}
+
+/* ---------- Heading ---------- */
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #ffffff;
+  letter-spacing: 1px;
+}
+
+/* ---------- Input Field ---------- */
+input[type="text"] {
+  padding: 12px;
+  width: 90%;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  margin-bottom: 15px;
+  outline: none;
+}
+
+/* ---------- Buttons ---------- */
+button {
+  padding: 10px 15px;
+  margin: 5px;
+  font-size: 1rem;
+  background-color: #0077ff;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #005fcc;
+}
+
+/* ---------- Weather Info Box ---------- */
+.weather {
+  background: rgba(51, 45, 45, 0.1);
+  backdrop-filter: blur(8px);
+  padding: 20px;
+  border-radius: 15px;
+  margin-top: 20px;
+  display: none; /* Hide initially */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  color: white;
+}
+
+/* ---------- Show Weather Box When Data Loads ---------- */
+.weather.show {
+  display: block;
+}
+
+/* ---------- Weather Text ---------- */
+.weather h2 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+.weather p {
+  margin: 6px 0;
+  font-size: 1.1rem;
+  color: #e0f7fa;
+}
