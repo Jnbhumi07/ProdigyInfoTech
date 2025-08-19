@@ -1,0 +1,185 @@
+/* Fonts and Colors */
+:root {
+    --primary-color: #d4af37; 
+    --bg-color: #111;
+    --text-color: #fff;
+    --font-heading: 'Playfair Display', serif;
+    --font-body: 'Poppins', sans-serif;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--font-body);
+    line-height: 1.6;
+}
+
+/* Navbar */
+header {
+    background: rgba(0,0,0,0.9);
+    padding: 1rem 2rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: var(--font-heading);
+    font-size: 1.8rem;
+    color: var(--primary-color);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 2rem;
+}
+
+.nav-links a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    color: var(--primary-color);
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: url('https://static.vecteezy.com/system/resources/thumbnails/022/870/232/small_2x/home-interior-modern-dark-living-room-interior-black-empty-wall-mock-up-generative-ai-photo.jpeg') center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 2rem;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    font-family: var(--font-heading);
+    margin-bottom: 1rem;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    background: var(--primary-color);
+    color: #000;
+    padding: 0.7rem 1.5rem;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: #b8902c;
+}
+
+/* Sections */
+.section {
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+h2 {
+    font-family: var(--font-heading);
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+}
+
+/* Services */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.service-card {
+    background: #1b1b1b;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  padding: 20px;
+}
+
+
+
+.card {
+  background: #111;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+  text-align: center;
+  padding: 15px;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+  display: block;
+}
+
+.card p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #ddd;
+  line-height: 1.5;
+}
+
+/* Contact */
+.contact form {
+    display: grid;
+    gap: 1rem;
+    max-width: 500px;
+    margin: auto;
+}
+
+.contact input,
+.contact textarea {
+    padding: 0.8rem;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact button {
+    background: var(--primary-color);
+    color: #000;
+    padding: 0.8rem;
+    border: none;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #000;
+    font-size: 0.9rem;
+}
